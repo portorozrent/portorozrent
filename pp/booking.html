@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme by Enrico Caputo, enricocaputo.1972@gmail.com, Copyright 2016-2017 -->
-  <title>PortorozRent | Booking Center</title>
-  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></noscript>
-<script>
-!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
-!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
-</script>
+  <title>PortorozRent Booking Center</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Portoroz-Rent Boking Center, book now your boat and your car in Slovenia and Northern Italy" />
-  <meta name="description" content="PortorozRent, Boat rental with captain, car rental with driver: you will travel comfortably in Slovenia, Northern Italy, Austria, Serbia." />
-  <meta name="robots" content="noodp, noydir"/>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="preload" as="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <meta name="keywords" content="Boking, Rental Car, rental Boat, Hire, Noleggio, Barca, Auto" />
+  <meta name="description" content="Book now and save! PortorozRent is the leading boat rental company in Portoroz in Slovenia." />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="preload" as="font" crossorigin type="font/woff2">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="preload" as="font" crossorigin type="font/woff2">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="preload" as="font" crossorigin type="font/woff2">
-  <link rel="canonical" href="http://www.portorozrent.si/pp/booking.html"/>
+  <link rel="canonical" href="https://portorozrent.si/pp/booking.html"/>
   <!-- Facebook Open Graph -->
   <meta property="og:site_name" content="Portorozrent" />
-  <meta property="og:title" content="Boat rental with captain, Car rental with driver" />
-  <meta property="og:description" content="Book now your trip in Slovenia with us, and have fun!" />
-  <meta property="og:url" content="http://www.portorozrent.si/" />
+  <meta property="og:title" content="PortorozRent Booking Center" />
+  <meta property="og:description" content="Book now and save! PortorozRent is the leading boat rental company in Portoroz in Slovenia."/>
+  <meta property="og:url" content="https://portorozrent.si/" />
   <meta property="og:site_name" content="PortorozRent" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://www.portorozrent.si/img/facebook/fb-share-portorozrent.png" />
+  <meta property="og:image" content="https://portorozrent.si/img/facebook/fb-share-portorozrent.png" />
 
-  <style>
+<style>
   body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
@@ -220,10 +213,25 @@ footer {
 	  font-size: 2.2em;
     }
   }
+
+@media (min-width: 350px) {
+  .adsbygoogle {
+    height: 180px;
+  }
+@media (min-width: 500px) {
+  .adsbygoogle {
+    height: 130px;
+  }
+}
+@media (min-width: 800px) {
+  .adsbygoogle {
+    height: 200px;
+  }
+}
     </style>
 
 </head>
-<!-- Body -->
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -235,7 +243,7 @@ footer {
   <div id="flag" class="text-right">
   <!-- Modal language -->
   <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
-  <img src="../img/flags/all-flag.png">
+  <img src="../img/flags/all-flag.png" alt=""/>
   </button><br/><br/>
   <!-- Modal -->
   <div id="myModal" class="modal fade " role="dialog">
@@ -268,20 +276,35 @@ footer {
             <div class="container">
                 <div class="row">
 					<div class="col-md-6">
-						<h1 class="title">Portorož Rent<br/>viaggi confortevoli, emozionanti e sicuri</h1>
-						
-						
+						<h1 class="title">Portorož Rent <br/> Booking <br/> OnLine</h1>
+
+
 						<span itemprop="telephone">
-						<a href="tel:" class="btn btn-danger btn-raised btn-lg">
+						<a href="tel:+38641669381" class="btn btn-danger btn-raised btn-lg">
 						<i class="fa fa-phone" aria-hidden="true"></i> Click and Call
 						</a>
+            </span>
 					</div>
                 </div>
             </div>
         </div>
-        
-        
+
+
 		<div class="main main-raised">
+
+<!-- adSense-->
+<div class="text-center">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-91-1i+6s-2g-cq"
+     data-ad-client="ca-pub-2292514451269367"
+     data-ad-slot="1730712514"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
 
 <!-- PRENOTAZIONI-->
 <div class="container-fluid">
@@ -316,16 +339,16 @@ footer {
       </div>
       <p><em>Choose your trip package. Make a reservation now, pay at your arrival.</em></p>
       <ul>
-	  <input type="checkbox" name="Pack" value="Pirano Isola"> € 350 - Package Piran Izola.<br/>
-	  <input type="checkbox" name="Pack" value="Costa Slovena"> € 550 - Package Costa Slovena.<br/>
+	  <input type="checkbox" name="Pack" value="Pirano Isola"> € 350 - Package Piran Izola. <br/>
+	  <input type="checkbox" name="Pack" value="Costa Slovena"> € 550 - Package Costa Slovena. <br/>
 	  <input type="checkbox" name="Pack" value="Trieste"> € 100 - Package Trieste.
-      </ul>      
+      </ul>
       <label for="From" class="col-sm-5"><span class="glyphicon glyphicon-th"></span> Date of Arrival:</label>
       <div class="col-sm-7">
       <input type="date" class="form-control input-sm" name="From" required>
       <span class="help-block">dd/mm/yyyy</span>
       </div>
-      <br/>   
+      <br/>
       <label for="To" class="col-sm-5"><span class="glyphicon glyphicon-time"></span> Time of Arrival:</label>
       <div class="col-sm-7">
       <input type="time" class="form-control input-sm" name="To" required>
@@ -356,13 +379,13 @@ footer {
       <input type="checkbox" name="Pack" value="Lubiana"> € 100 - Package Lubiana.<br/>
       <input type="checkbox" name="Pack" value="Venezia"> € 100 - Package Venezia.<br/>
       <input type="checkbox" name="Pack" value="OnDemand"> Ask the price - Taylored.
-      </ul>      
+      </ul>
       <label for="From" class="col-sm-5"><span class="glyphicon glyphicon-th"></span> Date of Arrival:</label>
       <div class="col-sm-7">
       <input type="date" class="form-control input-sm" name="From" required>
       <span class="help-block">dd/mm/yyyy</span>
       </div>
-      <br/>   
+      <br/>
       <label for="To" class="col-sm-5"><span class="glyphicon glyphicon-time"></span> Time of Arrival:</label>
       <div class="col-sm-7">
       <input type="time" class="form-control input-sm" name="To" required>
@@ -394,7 +417,7 @@ footer {
 		<button class="btn btn-primary" style="width:22%">Like +238</button>
 		<a href="faq.html" class="btn btn-success" style="width:22%">F A Q</a>
 		<button class="btn btn-danger" style="width:22%">Booking</button>
-    
+
 	</nav>
 
   <!-- Google Analytics -->
