@@ -230,20 +230,35 @@
       <a id="hamburger" class="button" on='tap:drawermenu.toggle'>
         <amp-img srcset="img/ic_menu_white_1x_web_24dp.png 1x, ../img/ic_menu_white_2x_web_24dp.png 2x" width="24" height="24" alt="navigation"></amp-img>
       </a>
-      <section id="flags">
-      <a class="flags"  href="/it">It
-        <amp-img srcset="img/flags/it.png 1x, ../img/flags/it.png 2x" width="32" height="32" alt="navigation"></amp-img>
-      </a>
-      <a class="flags" href="/de">De
-        <amp-img srcset="img/flags/de.png 1x, ../img/flags/de.png 2x" width="32" height="32" alt="navigation"></amp-img>
-      </a>
-      <a class="flags" href="/ru">Ru
-        <amp-img srcset="img/flags/ru.png 1x, ../img/flags/ru.png 2x" width="32" height="32" alt="navigation"></amp-img>
-      </a>
-      <a class="flags" href="/en">En
-        <amp-img srcset="img/flags/uk.png 1x, ../img/flags/uk.png 2x" width="32" height="32" alt="navigation"></amp-img>
-      </a>
-      </section>
+<!--flag lingue -->
+ <div id="flag" class="text-right">
+ <!-- Modal language -->
+ <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+ <img src="../img/flags/all-flag.png" alt=""/>
+ </button><br/><br/>
+ <!-- Modal -->
+ <div id="myModal" class="modal fade " role="dialog">
+ <div class="modal-dialog">
+ <!-- Modal content-->
+ <div class="modal-content modal-sm" id="modal-lingue">
+ <div class="modal-body">
+ <!--GOOGLE SNIPPET-->
+ <div id="google_translate_element"></div><script type="text/javascript">
+ function googleTranslateElementInit() {
+ new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,en,it,ru,sl', autoDisplay: false}, 'google_translate_element');
+ }
+ </script>
+ <!-- / GOOGLE SNIPPET-->
+ </div>
+ <div class="modal-footer">
+ <button type="button" class="btn btn-default" data-dismiss="modal"><b>X</b></button>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <!-- / Modal -->
+ <!-- / flag lingue-->
 
       <section id="fb">
       <a class="flags h1" href="https://www.facebook.com/portorozrent">
