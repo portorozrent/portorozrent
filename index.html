@@ -30,7 +30,6 @@
   <link rel="apple-touch-icon" sizes="167x167" href="/img/icons/167.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/180.png">
   <script async custom-element="amp-script" src="https://portorozrent.si/js/jquery.min.js"></script>
-  <script async custom-element="amp-script" src="https://portorozrent.si/js/cookie.js"></script>
   <style amp-custom>
 	/* Font Awesome */
 @font-face {
@@ -399,5 +398,10 @@
 </div>
 
 <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
+<script  id = "cookie"  type = "text / plain"  target = "amp-script">
+  $(document).ready(function() {
+  $.cookieBar();
+});
+</script>
   </body>
   </html>
