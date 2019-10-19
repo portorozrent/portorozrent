@@ -59,7 +59,7 @@
 
 			// if close button not defined. define it!
 			if (settings.closeButton == 'none') {
-				cookiebar.append('<div class="cookie-dialog"><a class="cookie-dettagli">VISUALIZZA ALTRI DETTAGLI</a><a class="cookiebar-close">OK</a></div>');
+				cookiebar.append('<div class="cookie-dialog"><a class="cookie-dettagli">Več</a><a class="cookiebar-close">Strinjam se</a></div>');
 				$.extend(settings, { 'closeButton': '.cookiebar-close' });
 			}
 
