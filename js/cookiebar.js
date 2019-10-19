@@ -80,7 +80,7 @@
 
 	// self injection init
 	$.cookieBar = function (options) {
-		$('body').prepend('<div class="ui-widget"><div style="display: none;" class="cookie-message ui-widget-header blue"><p>Questo sito utilizza cookies. Se prosegui la navigazione accetti che vengano utilizzati.</p></div></div>');
+		$('body').prepend('<div class="ui-widget"><div style="display: none;" class="cookie-message ui-widget-header blue"><p>Spletno mesto uporablja piškotke, s katerimi izboljšujemo uporabniško izkušnjo in zagotavljamo vsebine.</p></div></div>');
 		$('.cookie-message').cookieBar(options);
 	};
 })(jQuery);
