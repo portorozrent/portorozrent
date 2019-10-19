@@ -29,7 +29,7 @@
   <link rel="apple-touch-icon" sizes="152x152" href="/img/icons/152.png">
   <link rel="apple-touch-icon" sizes="167x167" href="/img/icons/167.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/180.png">
-  <script async custom-element="amp-script" src="https://portorozrent.si/js/jquery.min.js"></script>
+  <script custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js" async=""></script>
   <style amp-custom>
 	/* Font Awesome */
 @font-face {
@@ -398,10 +398,27 @@
 </div>
 
 <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
-<script  id = "cookie"  type = "text / plain"  target = "amp-script">
-  $(document).ready(function() {
-  $.cookieBar();
-});
-</script>
+<amp-consent id="consent" class="-o i-amphtml-layout-nodisplay i-amphtml-element amp-active i-amphtml-layout" layout="nodisplay" i-amphtml-layout="nodisplay" i-amphtml-fixedid="F12" style="">
+  <script type="application/json" hidden="">
+    {
+      "consents": {
+        "eu": {
+          "promptIfUnknownForGeoGroup": "eu",
+          "promptUI": "consent-popup"
+        }
+      }
+    }
+  </script>
+
+  <div id="consent-popup" class="consent-popup">
+    <button type="reset" class="-u" on="tap:consent.dismiss" role="button" tabindex="0" aria-label="Dismiss consent">
+      <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg>
+    </button>
+    <p class="ap-o-consent-text">
+        We use cookies to understand how you use our site and to improve your experience. By continuing to use our site, you accept our <a href="https://policies.google.com/technologies/cookies">use of cookies</a> and <a href="https://policies.google.com/privacy">privacy policy</a>.
+    </p>
+    <button on="tap:consent.accept" class="ap-a-btn" role="button" aria-label="Accept use of cookies">Got it!</button>
+  </div>
+</amp-consent>
   </body>
   </html>
