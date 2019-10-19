@@ -344,21 +344,21 @@
 
 <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
 < amp-consent  layout = "nodisplay"  id = "consent-element" >
-  < script  type = "application / json" >
+<script type="application/json" hidden="">
   {
-    "consents" :  {
-      "my-consent" :  {
-        "checkConsentHref" :  "https: // foo .com / api / show-consent " ,
-        " promptUI " :  " consent-ui "
+    "consents": {
+      "eu": {
+        "promptIfUnknownForGeoGroup": "eu",
+        "promptUI": "consent-popup"
       }
     }
   }
-  </ script >
-  < div  id = " consent-ui " >
-    <button  on = "tap: consent-element.accept" role = "button" > Accetta </ button >
-    < button  on = "tap: consent-element.reject"  role = "button" > Rifiuta </ button >
-    < button  on = "tap: consent-element.dismiss"  role = "button" > Ignora </ button >
-  </ div >
-</ amp-consent >
+</script>
+  <div  id = " consent-ui ">
+    <button  on = "tap: consent-element.accept" role = "button" > Accetta </button>
+    <button  on = "tap: consent-element.reject"  role = "button" > Rifiuta </button>
+    <button  on = "tap: consent-element.dismiss"  role = "button" > Ignora </button>
+  </div>
+</amp-consent>
   </body>
   </html>
