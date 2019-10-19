@@ -339,6 +339,11 @@
 </div>
 
 <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
-
+<script async custom-element="amp-script" src="{{ site.baseurl }}/js/jquery.min.js"></script>
+<amp-script>
+    $(document).ready(function() {
+      $.cookieBar();
+    });
+</amp-script>
   </body>
   </html>
