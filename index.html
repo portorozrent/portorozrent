@@ -33,6 +33,18 @@
   <style amp-custom>
 
 
+  amp-user-notification > div {
+      font: 14px/1.5 Helvetica, Arial, sans-serif;
+      color: #fff;
+      background: #000;
+      padding: 1rem;
+  }
+
+  amp-user-notification > div a {
+      color: #fff;
+  }
+
+
 	/* Font Awesome */
 @font-face {
     font-family: 'FontAwesome';
@@ -161,7 +173,7 @@
     }
   }
   </style>
-  <script custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js" async=""></script>
+  <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
 
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -343,22 +355,15 @@
 </div>
 
 <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
-< amp-consent  layout = "nodisplay"  id = "consent-element" >
-<script type="application/json" hidden="">
-  {
-    "consents": {
-      "eu": {
-        "promptIfUnknownForGeoGroup": "eu",
-        "promptUI": "consent-popup"
-      }
-    }
-  }
-</script>
-  <div  id = " consent-ui ">
-    <button  on = "tap: consent-element.accept" role = "button" > Accetta </button>
-    <button  on = "tap: consent-element.reject"  role = "button" > Rifiuta </button>
-    <button  on = "tap: consent-element.dismiss"  role = "button" > Ignora </button>
-  </div>
-</amp-consent>
+
+
+<amp-user-notification id="my-notification" layout="nodisplay">
+    <div>
+        Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento e utili alle finalità illustrate nella <a href="">cookie policy</a>. Cliccando su "Accetto" acconsenti all'uso dei cookie.
+        <button on="tap:my-notification.dismiss" class="ampstart-btn caps ml1">Accetto</button>
+    </div>
+</amp-user-notification>
+
+
   </body>
   </html>
