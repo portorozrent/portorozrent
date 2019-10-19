@@ -32,47 +32,40 @@
 
   <style amp-custom>
 
-  amp-user-notification {
-      box-shadow: 0 0 16px rgba(0,0,0,.02) ;
-      border-radius: 4px;
-      margin: 16px ;
-      padding: 8px ;
-  }
 
   amp-user-notification > div {
-      font: 14px/1.5 Helvetica, Arial, sans-serif;
-      color: #fff;
-      background: #000;
-  }
+       font: 14px/1.5 Helvetica, Arial, sans-serif;
+       color: #fff;
+       background: #000;
+       padding: 1rem;
+   }
 
   amp-user-notification > div a {
       color: #fff;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      padding: 8px 32px ;
+      border-radius: 64px ;
+      cursor: pointer ;
+      font-weight: 700 ;
+      font-size: 100% ;
+      margin-top: 4px ;
+      margin-bottom: 4px ;
+      text-align: center ;
   }
 
-  .acceptcookie-btn {
+  amp-user-notification > div a .acceptcookie-btn {
     background-color: #0073ce ;
-    color: #fff ;
 }
 
- .customcookie-btn {
+ amp-user-notification > div a .customcookie-btn {
     background-color: rgba(255,255,255,.1) ;
-    color: #fff ;
 }
-
-.acceptcookie-btn .customcookie-btn {
-  padding: 8px 32px ;
-  border-radius: 64px ;
-  cursor: pointer ;
-  font-weight: 700 ;
-  font-size: 100% ;
-  margin-top: 4px ;
-  margin-bottom: 4px ;
-  text-align: center ;
-}
-
 
 @media (max-width: 639px){
-  .acceptcookie-btn .customcookie-btn {
+  amp-user-notification > div a {
     width: 100% ;
     display: block;
     text-align: center ;
