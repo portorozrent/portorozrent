@@ -147,6 +147,73 @@
     margin: 0 16px;
   }
 
+  amp-consent.amp-active {
+      visibility: visible;
+  }
+  .-o {
+      right: 20px;
+      left: auto;
+      bottom: 20px;
+      width: calc(100% - 40px);
+      padding: 15px;
+      line-height: 1.6rem;
+      font-weight: 400;
+      color: #48525c;
+      font-size: .875rem;
+      background-color: #fff;
+      box-shadow: 0 15px 30px 0 rgba(0,0,0,.15);
+      border-radius: 8px;
+  }
+  .i-amphtml-element {
+      display: inline-block;
+  }
+  amp-consent {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      overflow: hidden!important;
+      background: hsla(0,0%,100%,0.7);
+      width: 100%;
+      z-index: 2147483645;
+      .-o button {
+        cursor: pointer;
+    }
+
+    .-u {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+      }
+
+        .ap-a-btn {
+          margin-top: 1.5rem;
+          font-family: Poppins,sans-serif;
+          font-weight: 700;
+          line-height: 1.2em;
+          font-size: 1em;
+          color: #fff;
+          display: inline-block;
+          max-width: 100%;
+          width: auto;
+          height: auto;
+          padding: .75em 1.75em;
+          margin: 0;
+          text-decoration: none;
+          text-align: center;
+          border-radius: 3px;
+          border: 0;
+          cursor: pointer;
+          box-shadow: 0 15px 35px -5px rgba(0,0,0,.25);
+          transition: transform .3s cubic-bezier(.25,.1,.25,1),box-shadow .3s cubic-bezier(.25,.1,.25,1);
+      }
+
+      .-s .-i, .ap-a-btn {
+          background-color: #005af0;
+      }
+
 	@media screen and (min-width: 1024px) {
     .wrapper {
       padding-left:20%;
@@ -339,7 +406,7 @@
 </div>
 
 <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
-<amp-consent id="consent" layout="nodisplay">
+<amp-consent id="consent" class="-o i-amphtml-layout-nodisplay i-amphtml-element amp-active i-amphtml-layout" layout="nodisplay">
   <script type="application/json" hidden="">
     {
       "consents": {
@@ -358,7 +425,7 @@
     <p>
         We use cookies to understand how you use our site and to improve your experience. By continuing to use our site, you accept our <a href="https://policies.google.com/technologies/cookies">use of cookies</a> and <a href="https://policies.google.com/privacy">privacy policy</a>.
     </p>
-    <button on="tap:consent.accept" role="button" aria-label="Accept use of cookies">Got it!</button>
+    <button on="tap:consent.accept" class="ap-a-btn" role="button" aria-label="Accept use of cookies">Got it!</button>
   </div>
 </amp-consent>
   </body>
