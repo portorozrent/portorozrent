@@ -40,36 +40,50 @@
        padding: 1rem;
    }
 
-  amp-user-notification > div a button {
+  amp-user-notification > div a {
+      background-color: rgba(255,255,255,.1);
       color: #fff;
+      border: none;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       cursor: pointer;
-      padding: 8px 32px ;
+      padding: 15px 32px ;
       border-radius: 64px ;
-      cursor: pointer ;
-      font-weight: 700 ;
-      font-size: 100% ;
-      margin-top: 4px ;
-      margin-bottom: 4px ;
-      text-align: center ;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 100%;
+      margin: 4px 2px;
+      text-align: center;
+      cursor: pointer;
   }
 
   amp-user-notification > div button {
-    background-color: #0073ce;
+      background-color: #0073ce;
+      color: #fff;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px 32px;
+      border-radius: 64px;
+      cursor: pointer ;
+      font-weight: 700;
+      font-size: 100%;
+      margin: 4px 2px;
+      text-align: center;
+      cursor: pointer;
 }
 
- amp-user-notification > div a {
-    background-color: rgba(255,255,255,.1);
-}
 
 @media (max-width: 639px){
   amp-user-notification > div a {
     width: 100% ;
     display: block;
-    text-align: center ;
-    margin: 4px 2px ;
+  }
+  amp-user-notification > div button {
+    width: 100% ;
+    display: block;
   }
 }
 	/* Font Awesome */
@@ -382,8 +396,11 @@
 
 <amp-user-notification id="cookie-notification" layout="nodisplay">
     <div>
-        Spletno mesto uporablja piškotke, s katerimi izboljšujemo uporabniško izkušnjo in zagotavljamo vsebine. <a class="customcookie-btn" href="/pp/privacy-cookie.html">Izvedite več in prilagodite.</a>
-        <button on="tap:my-notification.dismiss" class="acceptcookie-btn">Strinjam se</button>
+        Spletno mesto uporablja piškotke, s katerimi izboljšujemo uporabniško izkušnjo in zagotavljamo vsebine.
+    </div>
+    <div>
+        <a class="customcookie-btn" href="/pp/privacy-cookie.html">Izvedite več in prilagodite.</a>
+        <button class="acceptcookie-btn" on="tap:my-notification.dismiss" class="acceptcookie-btn">Strinjam se</button>
     </div>
 </amp-user-notification>
 
