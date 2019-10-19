@@ -37,14 +37,46 @@
       font: 14px/1.5 Helvetica, Arial, sans-serif;
       color: #fff;
       background: #000;
-      padding: 1rem;
+      box-shadow: 0 0 16px rgba(0,0,0,.02)!important;
+      border-radius: 4px!important;
+      margin: 16px!important;
+      padding: 8px!important;
   }
 
   amp-user-notification > div a {
       color: #fff;
   }
 
+  .acceptcookie-btn {
+    background-color: #0073ce!important;
+    color: #fff!important;
+}
 
+ .customcookie-btn {
+    background-color: rgba(255,255,255,.1)!important;
+    color: #fff!important;
+}
+
+.acceptcookie-btn .customcookie-btn {
+  padding: 8px 32px!important;
+  border-radius: 64px!important;
+  cursor: pointer!important;
+  font-weight: 700!important;
+  font-size: 100%!important;
+  margin-top: 4px!important;
+  margin-bottom: 4px!important;
+  text-align: center!important;
+}
+
+
+@media (max-width: 639px){
+  .acceptcookie-btn .customcookie-btn {
+    width: 100%!important;
+    display: block;
+    text-align: center!important;
+    margin: 4px 2px!important;
+  }
+}
 	/* Font Awesome */
 @font-face {
     font-family: 'FontAwesome';
@@ -353,10 +385,10 @@
 <amp-font layout="nodisplay" font-family="FontAwesome" timeout="3000" on-error-add-class="font-awesome-missing"></amp-font>
 
 
-<amp-user-notification id="my-notification" layout="nodisplay">
+<amp-user-notification id="cookie-notification" layout="nodisplay">
     <div>
-        Spletno mesto uporablja piškotke, s katerimi izboljšujemo uporabniško izkušnjo in zagotavljamo vsebine. - <a href="/pp/privacy-cookie.html">Več</a> | Nastavitve .
-        <button on="tap:my-notification.dismiss" class="ampstart-btn caps ml1">Strinjam se</button>
+        Spletno mesto uporablja piškotke, s katerimi izboljšujemo uporabniško izkušnjo in zagotavljamo vsebine. <a class="customcookie-btn" href="/pp/privacy-cookie.html">Izvedite več in prilagodite.</a>
+        <button on="tap:my-notification.dismiss" class="acceptcookie-btn">Strinjam se</button>
     </div>
 </amp-user-notification>
 
