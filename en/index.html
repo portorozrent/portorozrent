@@ -223,7 +223,7 @@
   </head>
  <body class="inverse">
 
-<amp-analytics type="googleanalytics" id="analytics1">
+<amp-analytics type="googleanalytics" id="analytics1" data-consent-notification-id="cookie-notification">
 <script type="application/json">
 {
   "vars": {
@@ -398,7 +398,7 @@
     </div>
     <div>
         <a href="/pp/privacy-cookie.html">Learn more</a>
-        <button on="tap:my-notification.dismiss" class="ampstart-btn caps ml1">Got it!</button>
+        <button on="tap:cookie-notification.dismiss">Got it!</button>
     </div>
 </amp-user-notification>
   </body>
